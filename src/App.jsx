@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <Header />
-      <div className="container mx-auto">
+      <main className="container mx-auto">
         <Section>
           <FiftyFifty
             subtitle="DIGITAL PRODUCTS"
@@ -80,7 +80,7 @@ function App() {
             image="https://images.ctfassets.net/19dvw6heztyg/5LepYwomTxpDT9PU2CoeHo/0aec7f94e534ac062df48c7e7f4c7f51/digital_products-webinars.png?w=1440&q=75"
           />
         </Section>
-      </div>
+      </main>
     </>
   );
 }

@@ -6,7 +6,7 @@ export default {
   theme: {
     fontFamily: {
       sans: ["Inter", ...defaultTheme.fontFamily.sans],
-      serif: ["Neuton", ...defaultTheme.fontFamily.serif],
+      serif: ["Playfair Display", ...defaultTheme.fontFamily.serif],
     },
     extend: {},
   },

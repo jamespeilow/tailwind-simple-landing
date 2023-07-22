@@ -1,3 +1,6 @@
+import clsx from "clsx";
+import { useEffect, useState } from "react";
+
 export const Header = () => {
   const navigation = [
     {
@@ -22,8 +25,31 @@ export const Header = () => {
     },
   ];
 
+  const [headerScroll, setHeaderScroll] = useState(true);
+
+  const handleHeaderScroll = () => {
+    const pastThreshold = window.scrollY > 100;
+
+    setHeaderScroll(pastThreshold);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleHeaderScroll);
+
+    handleHeaderScroll();
+
+    return () => {
+      window.removeEventListener("scroll", handleHeaderScroll);
+    };
+  }, []);
+
   return (
-    <header>
+    <header
+      className={clsx(
+        "sticky top-0 transition duration-500",
+        headerScroll && "bg-white shadow-md",
+      )}
+    >
       <div className="mx-auto flex items-center px-5 py-4 text-gray-800 lg:container md:px-10 lg:px-0">
         <div className="me-4 text-4xl font-black lowercase leading-none text-indigo-800 ">
           <a href="/">Podia</a>
