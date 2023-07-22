@@ -8,7 +8,7 @@ export const FiftyFifty = ({
 }) => {
   const titleClassName = hero
     ? "mb-4 font-serif text-4xl font-bold lg:text-5xl lg:leading-normal"
-    : "mb-4 font-serif text-xl font-bold lg:text-3xl lg:leading-none";
+    : "mb-4 font-serif text-xl font-bold lg:text-3xl lg:leading-normal";
 
   const descriptionClassName = hero
     ? "text-gray-600 text-lg leading-8 lg:text-xl lg:leading-loose"
@@ -22,7 +22,7 @@ export const FiftyFifty = ({
   return (
     <section className="grid items-center gap-12 lg:grid-cols-2">
       <div>
-        <p className="text-xs font-semibold uppercase tracking-widest text-stone-400">
+        <p className="text-xs font-medium uppercase tracking-widest text-stone-400 lg:mb-2">
           {subtitle}
         </p>
 

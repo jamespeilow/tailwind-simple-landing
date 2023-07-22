@@ -2,6 +2,7 @@ import "./App.css";
 import { CTABanner } from "./components/ctaBanner/CTABanner";
 import { FiftyFifty } from "./components/fiftyFifty/FiftyFifty";
 import { Header } from "./components/header/Header";
+import { Review } from "./components/review/Review";
 import { Section } from "./components/section/Section";
 import { TextBanner } from "./components/textBanner/TextBanner";
 
@@ -49,6 +50,14 @@ function App() {
         </Section>
 
         <Section>
+          <Review
+            rating={5}
+            review="I’ve wanted to offer e-courses for a while but always felt overwhelmed with how to set it up. Podia has made it super easy."
+            author="Joy Cho, Oh Joy! Academy"
+          />
+        </Section>
+
+        <Section>
           <FiftyFifty
             subtitle="Digital Downloads"
             title="Ebooks, templates, and any file type you can think of"
@@ -63,12 +72,28 @@ function App() {
         </Section>
 
         <Section>
+          <Review
+            rating={5}
+            review="We didn’t have to stress about technical details or custom coding. Using Podia made selling our first eBook quick, efficient, and fun."
+            author="Matt & Steph, Plant-based food bloggers"
+          />
+        </Section>
+
+        <Section>
           <FiftyFifty
             subtitle="Coaching"
             title="One-on-one coaching and consultations, with billing managed for you"
             description="Sometimes your students want one-on-one attention. Podia makes it easy for you to charge for coaching sessions and consultations."
             cta={{ text: "Learn more about coaching", href: "/", type: "text" }}
             image="https://images.ctfassets.net/19dvw6heztyg/6MRIUMFs5dX9PKOjtzMXjf/9f5b01182904ffc6c4663dc2f442c3ba/digital_products-coaching.png?w=1440&q=75"
+          />
+        </Section>
+
+        <Section>
+          <Review
+            rating={5}
+            review="Podia just works. It’s easy to use and includes everything you need to sell digital products. I’ve tried all the alternatives, and Podia is hard to beat."
+            author="Shawn Leamon, Divorce and Your Money"
           />
         </Section>
 
