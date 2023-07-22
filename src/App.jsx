@@ -2,6 +2,7 @@ import "./App.css";
 import { FiftyFifty } from "./components/fiftyFifty/FiftyFifty";
 import { Header } from "./components/header/Header";
 import { Section } from "./components/section/Section";
+import { TextBanner } from "./components/textBanner/TextBanner";
 
 function App() {
   return (
@@ -19,6 +20,20 @@ function App() {
             cta={{ text: "Get your free account", href: "/", type: "button" }}
             image="https://images.ctfassets.net/19dvw6heztyg/3xU9z3jUaXTRdC0ii7hXVb/2ac68a4e2bab8ea98b76e001daf345af/digital_products-hero.png?w=1440&q=75"
             hero
+          />
+        </Section>
+
+        <Section>
+          <TextBanner
+            title="All you have to do is make the product. Podia takes care of the details for you."
+            description="Podia lets you make your sales page, take payments, and give your customers access all in one place. Host and sell your products without needing to figure out a handful of new tools."
+          />
+        </Section>
+
+        <Section>
+          <TextBanner
+            title="What kinds of products can you sell with Podia?"
+            description="Podia gives you the flexibility to sell whatever you want. That means you have more ways to grow your creator business."
           />
         </Section>
 

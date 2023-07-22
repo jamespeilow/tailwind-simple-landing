@@ -11,8 +11,8 @@ export const FiftyFifty = ({
     : "mb-4 font-serif text-xl font-bold lg:text-3xl lg:leading-none";
 
   const descriptionClassName = hero
-    ? "text-lg leading-8 lg:text-xl lg:leading-loose"
-    : "text-base leading-8 lg:text-lg";
+    ? "text-gray-600 text-lg leading-8 lg:text-xl lg:leading-loose"
+    : "text-gray-600 text-base leading-8 lg:text-lg";
 
   const ctaClassName =
     cta?.type === "button"
