@@ -30,7 +30,7 @@ export const FiftyFifty = ({
 
         <p className={descriptionClassName}>{description}</p>
 
-        <a href={cta.url} className={ctaClassName}>
+        <a href={cta.href} className={ctaClassName}>
           {cta.text}
         </a>
       </div>
