@@ -1,4 +1,5 @@
 import "./App.css";
+import { CTABanner } from "./components/ctaBanner/CTABanner";
 import { FiftyFifty } from "./components/fiftyFifty/FiftyFifty";
 import { Header } from "./components/header/Header";
 import { Section } from "./components/section/Section";
@@ -78,6 +79,14 @@ function App() {
             description="How can you charge for your webinars and workshops? Do it from your Podia site. Set up a paid webinar product and your customers can register straight from your website."
             cta={{ text: "Learn more about webinars", href: "/", type: "text" }}
             image="https://images.ctfassets.net/19dvw6heztyg/5LepYwomTxpDT9PU2CoeHo/0aec7f94e534ac062df48c7e7f4c7f51/digital_products-webinars.png?w=1440&q=75"
+          />
+        </Section>
+
+        <Section>
+          <CTABanner
+            title="Get your free Podia account"
+            description="Join the 150,000+ creators who use Podia to create websites, sell digital products, and build online communities."
+            cta={{ href: "/", label: "Sign up free" }}
           />
         </Section>
       </main>

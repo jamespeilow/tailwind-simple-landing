@@ -50,8 +50,8 @@ export const Header = () => {
         headerScroll && "bg-white shadow-md",
       )}
     >
-      <div className="mx-auto flex items-center px-5 py-4 text-gray-800 lg:container md:px-10 lg:px-0">
-        <div className="me-4 text-4xl font-black lowercase leading-none text-indigo-800 ">
+      <div className="mx-auto flex items-center px-5 py-3 text-gray-800 md:px-10 lg:max-w-7xl lg:px-0">
+        <div className="me-4 text-3xl font-black lowercase leading-none text-indigo-800 ">
           <a href="/">Podia</a>
         </div>
 
@@ -59,7 +59,7 @@ export const Header = () => {
           {navigation.map((navItem) => (
             <li key={navItem.label}>
               <a
-                className="rounded-full p-4 text-xl hover:bg-gray-200/40"
+                className="rounded-full p-4 text-lg hover:bg-gray-200/40"
                 href={navItem.href}
               >
                 {navItem.label}
@@ -68,16 +68,16 @@ export const Header = () => {
           ))}
         </ul>
 
-        <div className="ms-auto flex">
+        <div className="ms-auto flex items-center">
           <a
-            className="me-2 rounded-full p-4 text-xl hover:bg-gray-200/40"
+            className="me-2 rounded-full p-4 text-lg hover:bg-gray-200/40"
             href="/"
           >
             Login
           </a>
 
           <a
-            className="rounded-full p-4 text-xl hover:bg-gray-200/40 lg:hidden"
+            className="rounded-full p-4 text-lg hover:bg-gray-200/40 lg:hidden"
             href="/"
           >
             Menu
@@ -85,7 +85,7 @@ export const Header = () => {
 
           <a
             href="/"
-            className="hidden rounded-full bg-indigo-800 px-6 py-4 text-xl font-semibold text-white lg:block"
+            className="hidden rounded-full bg-indigo-800 px-6 py-3 text-lg font-medium text-white lg:block"
           >
             Sign up free
           </a>
